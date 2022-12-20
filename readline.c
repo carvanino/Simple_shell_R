@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 /**
- * main - getline()
+ * main - getline(), prints "$ " and wait for the user to enter a command
+ * and print on the next line
  *
  * Return: 0
  */

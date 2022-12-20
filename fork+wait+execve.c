@@ -19,7 +19,7 @@ int main(void)
 	pid_t child_pid = 1;
 
 	printf("Begining of the process\n");
-	my_pid == getpid();
+	my_pid= getpid();
 	printf("This is the parent process with ID: %u\n", my_pid);
 	while (i < 5 && child_pid != 0)
 	{

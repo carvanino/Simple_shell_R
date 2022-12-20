@@ -14,7 +14,7 @@
 
 int main()
 {
-	size_t len = 1024; /* n */
+	size_t len; /* n */
 	char *string, *str_cpy; /* lineptr */
 	size_t ret;
 	char *token;
@@ -53,6 +53,16 @@ int main()
 		token = strtok(NULL, delim);
 	}
 	argv[i] = NULL;
+	i = 0;
+	while (argv[i] != NULL)
+	{
+		free(argv[i]);
+		i++;
+	}
+	free(argv);
+	free(str_cpy);
+
+
 	/* Fix stack smashing error */
 	return (0);
 

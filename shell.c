@@ -51,7 +51,7 @@ int main (void)
 			token = strtok(NULL, delim);
 		}
 		argv[i] = NULL;
-		free(string);
+		//free(string);
 		free(str_cpy);
 
 		if (execve(argv[0], argv, NULL) == -1)

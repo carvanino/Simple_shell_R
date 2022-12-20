@@ -11,12 +11,9 @@ char *_getenv(const char *name)
 
 	while (environ[i] != NULL)
 	{
-		//printf("Here1\n");
 		token = strtok(environ[i], "=");
-		//printf("%s\n", token);
 		if (strcmp(token, name) == 0)
 		{
-			//printf("Here2\n");
 			token = strtok(NULL, "");
 			printf("%s\n", token);
 		}

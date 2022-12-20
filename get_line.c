@@ -8,7 +8,7 @@ char  *get_line(char *s, size_t maxchar, FILE *f)
 	if (maxchar)
 	{
 		int c;
-		while ( i < maxchar - 1 && ( c = fgetc( f ) ) != EOF && c != '\n' )
+		while ( i < maxchar - 1 && ( c = fgetc(f ) ) != EOF && c != '\n' )
 		{
 			s[i++] = c;
 		}
